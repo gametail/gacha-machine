@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/nouislider/dist/nouislider.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gacha Machine</title>
+  </head>
+  <body>
+    <video class="lowSpecVideo" src="../assets/potato/idle.webm"></video>
+    <div class="UI">
+      <div class="gambleContainer">
+        <div id="mainContainer">
+          <div class="topContainer">
+            <button id="lastPicked" class="look3d">-</button>
+            <button id="revertLastPicked" class="look3d">
+              <img src="/assets/revert.svg" alt="" width="20px" height="20px" />
+            </button>
+          </div>
+          <div class="addContainer">
+            <input
+              id="mainInput"
+              class="look3d"
+              placeholder="Add new entry..."
+              autocomplete="off"
+            />
+            <select name="rarity" id="raritySelect" class="look3d">
+              <option value="common">Common</option>
+              <option value="rare">Rare</option>
+              <option value="epic">Epic</option>
+              <option value="legendary">Legendary</option>
+            </select>
+            <button id="addEntryButton" class="look3d">+</button>
+          </div>
+          <ul class="look3d" id="entriesContainer">
+            <li>
+              Entries
+              <button class="look3d" id="clearEntryButton">clear</button>
+            </li>
+          </ul>
+        </div>
+
+        <button class="potato look3d">3D</button>
+
+        <div class="display">
+          <h2 id="rarity">Rarity</h2>
+          <h2 id="name">Rick</h2>
+        </div>
+        <div id="buttonContainer">
+          <button id="rollBtn" class="look3d">Roll</button>
+          <button id="pickBtn" class="look3d">Pick</button>
+        </div>
+
+        <dialog class="look3d" id="settingsDialog">
+          <div class="dialogContainer">
+            <button class="look3d" id="dialogClose">X</button>
+
+            <div id="dialogTitle">Rarities</div>
+            <div id="slider"></div>
+            <div id="configContainer">
+              <div class="rarityConfig">
+                <span class="commonColor">Common</span>:
+                <span id="commonConfig">Value</span>
+              </div>
+              <div class="rarityConfig">
+                <span class="rareColor">Rare</span>:
+                <span id="rareConfig">Value</span>
+              </div>
+              <div class="rarityConfig">
+                <span class="epicColor">Epic</span>:
+                <span id="epicConfig">Value</span>
+              </div>
+              <div class="rarityConfig">
+                <span class="legendaryColor">Legendary</span>:
+                <span id="legendaryConfig">Value</span>
+              </div>
+            </div>
+          </div>
+        </dialog>
+
+        <button class="settings look3d">
+          <img src="/assets/gear-solid.svg" />
+        </button>
+      </div>
+    </div>
+
+    <script defer type="module" src="src/state.ts"></script>
+    <script defer type="module" src="src/main.ts"></script>
+  </body>
+</html>

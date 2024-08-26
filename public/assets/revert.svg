@@ -1,0 +1,11 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="svg_13_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <path transform="rotate(90 20 20)" stroke-width="2" filter="url(#svg_13_blur)" id="svg_13" d="m2.39134,37.60866l0,-19.80975l0,0c0,-8.50937 6.89821,-15.40758 15.40758,-15.40758l0,0l0,0c4.08634,0 8.00532,1.62329 10.89481,4.51278c2.88948,2.88948 4.51277,6.80846 4.51277,10.89481l0,2.20108l4.40216,0l-8.80433,8.80434l-8.80433,-8.80434l4.40217,0l0,-2.20108c0,-3.64687 -2.95638,-6.60325 -6.60325,-6.60325l0,0l0,0c-3.64687,0 -6.60325,2.95637 -6.60325,6.60325l0,19.80975l-8.80433,0z" stroke="#ffffff" fill="#ffffff"/>
+ </g>
+</svg>
