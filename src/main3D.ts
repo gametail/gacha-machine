@@ -221,7 +221,7 @@ function setupScene() {
   //Evironment Map
   const textureLoader = new THREE.TextureLoader();
   const textureEquirec = textureLoader.load(
-    "../assets/LowPoly/textures/GachaRoom.jpeg"
+    `${import.meta.env.BASE_URL}assets/LowPoly/textures/GachaRoom.jpeg`
   );
   textureEquirec.mapping = THREE.EquirectangularReflectionMapping;
   textureEquirec.colorSpace = THREE.SRGBColorSpace;
@@ -288,7 +288,9 @@ async function loadSceneObjects(
     gltfSingleCapsule: GLTF | undefined = undefined;
 
   //Load Main Scene
-  let gltf = await loader.loadAsync("../assets/LowPoly/Gacha.gltf");
+  let gltf = await loader.loadAsync(
+    `${import.meta.env.BASE_URL}assets/LowPoly/Gacha.gltf`
+  );
 
   const gachaMachineScene = gltf.scene;
   gltfMachine = gltf;
@@ -334,7 +336,9 @@ async function loadSceneObjects(
     glassMaterial;
 
   //Load Single Capsule
-  gltf = await loader.loadAsync("../assets/SingleCapsule/SingleCapsule.gltf");
+  gltf = await loader.loadAsync(
+    `${import.meta.env.BASE_URL}assets/SingleCapsule/SingleCapsule.gltf`
+  );
   gltf.scene.traverse(function (object) {
     object.frustumCulled = false;
   });

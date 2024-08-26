@@ -3,7 +3,7 @@ import { getState, setState } from "./state";
 import { ChanceConfig, Entry, Rarity } from "./types";
 import * as noUiSlider from "nouislider";
 
-let potatoVideoURL = "../assets/potato/idle.webm";
+let potatoVideoURL = `${import.meta.env.BASE_URL}assets/potato/idle.webm`;
 
 function getElements() {
   return {
@@ -295,7 +295,7 @@ export function hideInteractableUI() {
 export function setAndPlayVideo(rarity: string) {
   const { potatoVideo } = getElements();
   if (potatoVideo) {
-    potatoVideoURL = `../assets/potato/${rarity}.webm`;
+    potatoVideoURL = `${import.meta.env.BASE_URL}assets/potato/${rarity}.webm`;
     potatoVideo.setAttribute("src", potatoVideoURL);
     potatoVideo.play();
   }
