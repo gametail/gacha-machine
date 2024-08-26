@@ -345,6 +345,18 @@ button:active {
   top: 15px;
   font-size: 2rem;
 }
+.github {
+  height: 3.75rem;
+  padding: 1rem;
+  text-decoration: none;
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .settings {
   width: 3.75rem;
