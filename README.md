@@ -19,7 +19,7 @@ This project is a 3D Gacha Machine web application, developed as a learning exer
 
 - **Rarity-Based Entry Management**: Add entries by typing in the input field and pressing the "+" button (or hitting enter). You can change the rarity between Common, Rare, Epic, and Legendary using the dropdown next to the input field before adding an entry.
 
-  ![Adding entries](./public/readme-gifs/addingentries.gif)
+  ![Adding entries](./public/readme-gifs/addingEntries.gif)
 
   Batch entry addition is also supported—simply separate values with commas. All entries added in a batch will share the selected rarity.
 
